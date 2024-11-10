@@ -1,0 +1,92 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+.neon-text {
+  font-size: 3em;
+  color: #ffffff;
+  text-shadow: 0 0 5px #00ffc3, 0 0 10px #00ffc3, 0 0 20px #00ffc3,
+    0 0 30px #00ffc3;
+  transition: transform 0.3s ease;
+}
+
+.neon-text:hover {
+  transform: scale(1.1);
+}
+
+.neon-tagline {
+  font-size: 1.2em;
+  color: #9bffdd;
+  animation: fadeInOut 3s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.about {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 5px rgb(0, 217, 255);
+}
+
+.about p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #ffffff;
+  text-shadow: 0px 0px 5px rgb(0, 217, 255);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 2em;
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #adb1b0;
+  transform: scale(1.2);
+}
